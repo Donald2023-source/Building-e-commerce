@@ -1,16 +1,13 @@
-import Footer from "./Footer"
-import Nav from "./nav"
-import Preview from "./preview"
+import Container from "../../../components/Container";
+import Preview from "./preview";
 
 const Home = () => {
-    return (
-        <>
-        <div>
-            <Nav/>
-            <Preview/>
-            <Footer/>
-        </div>
-        </>
-    )
-}
-export default Home
+  return (
+    <div>
+      <Container>
+        <Preview />
+      </Container>
+    </div>
+  );
+};
+export default Home;
