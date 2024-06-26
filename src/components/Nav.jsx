@@ -1,5 +1,6 @@
 import logo from "../assets/Ellipse 1.png";
 import cart from "../assets/Cart.png";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -22,18 +23,28 @@ const Nav = () => {
                 <button className="text-white rounded-lg p-2 w-20 border">
                   Login
                 </button>
-                <button className="text-white rounded-lg p-2 w-20 border">
-                  Sign Up
-                </button>
+                <Link to={"signup"}>
+                  <button className="text-white rounded-lg p-2 w-20 border">
+                    Sign Up
+                  </button>
+                </Link>
               </span>
             </div>
             <hr className="lg:block hidden my-4 border-gray-500 border-2" />
             <div className="text-white ">
               <ul className="lg:flex gap-12 justify-center py-2 hidden">
-                <li>Home</li>
-                <li>Shop</li>
-                <li>About us</li>
-                <li>Contact us</li>
+                <Link to={"/"}>
+                  <li>Home</li>
+                </Link>
+                <Link to={"shop"}>
+                  <li>Shop</li>
+                </Link>
+                <Link to={"about"}>
+                  <li>About us</li>
+                </Link>
+                <Link to={"contact us"}>
+                  <li>Contact us</li>
+                </Link>
               </ul>
             </div>
           </div>

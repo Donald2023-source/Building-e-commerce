@@ -8,3 +8,8 @@
   background-size: cover;
   background-position: 50% 35%;
 }
+
+
+.border-radius {
+  border-radius: 4px;
+}
