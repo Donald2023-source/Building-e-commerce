@@ -7,9 +7,9 @@ import Card from "./Card";
 
 const BestSelling = () => {
   return (
-    <section className="px-24 border-y-2 border-y-gray-500 py-5 my-8">
+    <section className="px-24 border-b-2 border-y-gray-500 py-5 my-8">
       <Card>
-        <div>
+        <div className="pb-4">
           <div className="font-semibold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
             This Month
           </div>
@@ -18,25 +18,26 @@ const BestSelling = () => {
             <Button>View All</Button>
           </div>
         </div>
-        <div className="flex items-center justify-evenly">
+        <div className="flex items-center justify-between">
           {data
-            .slice(53)
+            .slice(44)
             .map(({ img, id, price, previousPrice, rate, percent }, index) => (
               <div key={index}>
-                <div className="relative">
+                <div className="relative py-3">
                   <img src={img} alt={img} className="w-[100%]" />
-                  <div className="text-silver flex items-center gap-20 absolute">
-                    <span className="bg-black text-center border-radius px-2 py-[0.3px]">
+                  <div className="text-silver flex items-start gap-44 px-2 absolute top-6 ">
+                    <span className="bg-black text-center border-radius px-2 py-[0.3px] ">
                       -{percent}%
                     </span>
                     <div className="flex flex-col gap-2">
-                      <CiHeart className="bg-white text-blackk rounded-full text-center" />
-                      <MdOutlineRemoveRedEye className="bg-white text-blackk rounded-full text-center" />
+                      <CiHeart className="bg-white text-blackk rounded-full text-center text-2xl cursor-pointer px-1" />
+                      <MdOutlineRemoveRedEye className="bg-white text-blackk rounded-full text-center text-2xl cursor-pointer px-1" />
                     </div>
                   </div>
+                  <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius">Add To Cart</button>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm capitalize">{id}</p>
+                  <p className="font-semibold text-lg capitalize">{id}</p>
                   <div className="flex items-center gap-3">
                     <p className="text-fadedRed">
                       <span>N</span>

@@ -1,11 +1,11 @@
-
+import Card from "./Card";
 
 const FeaturedProduct = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <section className="px-24   py-5 my-8">
+      <Card></Card>
+    </section>
+  );
+};
 
-export default FeaturedProduct
+export default FeaturedProduct;

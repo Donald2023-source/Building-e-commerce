@@ -2,9 +2,9 @@ import logo from "../assets/Ellipse 1.png";
 
 const Footer = () => {
   return (
-    <>
+    <footer>
       <div className="bg-black w-screen">
-        <div className="flex items-center justify-center gap-10 lg:gap-40 mt-7 text-white py-20">
+        <div className="flex items-center justify-center  gap-10 lg:gap-40 mt-7 text-white py-20">
           <div>
             <img src={logo} alt="" />
 
@@ -88,7 +88,7 @@ const Footer = () => {
           Copyright nHub 2024. All right reserved
         </h2>
       </div>
-    </>
+    </footer>
   );
 };
 export default Footer;

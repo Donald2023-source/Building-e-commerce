@@ -21,7 +21,6 @@ const Shop = () => {
         <FeaturedProduct />
         <Buynow />
         <Explore />
-        <Buynow />
         <Subscribe />
       </Container>
     </section>

@@ -1,4 +1,3 @@
-import pipes from "../../../assets/pipes.png";
 import spades from "../../../assets/spade.png";
 import nuts from "../../../assets/nuts.png";
 import ladder from "../../../assets/ladder.png";
@@ -9,14 +8,12 @@ import wheels from "../../../assets/wheels.png";
 import brush from "../../../assets/white-brush.png";
 import drill1 from "../../../assets/drill-device.png";
 import drill2 from "../../../assets/drill-device2.png";
-import cutter from "../../../assets/cutter.png";
 import bots from "../../../assets/bots.png";
 import blue from "../../../assets/blue-paint.png";
 import brick from "../../../assets/bricks.png";
 import lightBlue from "../../../assets/lightBlue-paint.png";
 import doubleLadder from "../../../assets/double-ladder.png";
 import toolsBag from "../../../assets/tools-bag.png";
-import mason from "../../../assets/black-mason.png";
 
 export const data = [
   {
@@ -27,22 +24,7 @@ export const data = [
     price: "1,500",
     previousPrice: "3000",
   },
-  {
-    id: "building pipes",
-    img: pipes,
-    rate: "87",
-    percent: "50",
-    price: "150,000",
-    previousPrice: "155,456",
-  },
-  {
-    id: "hire mason",
-    img: mason,
-    rate: "94",
-    percent: "78",
-    price: "20,000",
-    previousPrice: "25,000",
-  },
+
   {
     id: "construction nuts",
     img: nuts,
@@ -155,14 +137,7 @@ export const data = [
     price: "11,000",
     previousPrice: "12,000",
   },
-  {
-    id: "cutter",
-    img: cutter,
-    rate: "45",
-    percent: "24",
-    price: "5000",
-    previousPrice: "5,500",
-  },
+
   {
     id: "bricks",
     img: brick,
@@ -179,22 +154,7 @@ export const data = [
     price: "1,500",
     previousPrice: "3000",
   },
-  {
-    id: "building pipes",
-    img: pipes,
-    rate: "87",
-    percent: "50",
-    price: "150,000",
-    previousPrice: "155,456",
-  },
-  {
-    id: "hire mason",
-    img: mason,
-    rate: "94",
-    percent: "78",
-    price: "20,000",
-    previousPrice: "25,000",
-  },
+
   {
     id: "construction nuts",
     img: nuts,
@@ -307,14 +267,7 @@ export const data = [
     price: "11,000",
     previousPrice: "12,000",
   },
-  {
-    id: "cutter",
-    img: cutter,
-    rate: "45",
-    percent: "24",
-    price: "5000",
-    previousPrice: "5,500",
-  },
+
   {
     id: "bricks",
     img: brick,
@@ -331,22 +284,7 @@ export const data = [
     price: "1,500",
     previousPrice: "3000",
   },
-  {
-    id: "building pipes",
-    img: pipes,
-    rate: "87",
-    percent: "50",
-    price: "150,000",
-    previousPrice: "155,456",
-  },
-  {
-    id: "hire mason",
-    img: mason,
-    rate: "94",
-    percent: "78",
-    price: "20,000",
-    previousPrice: "25,000",
-  },
+
   {
     id: "construction nuts",
     img: nuts,
@@ -459,14 +397,7 @@ export const data = [
     price: "11,000",
     previousPrice: "12,000",
   },
-  {
-    id: "cutter",
-    img: cutter,
-    rate: "45",
-    percent: "24",
-    price: "5000",
-    previousPrice: "5,500",
-  },
+
   {
     id: "bricks",
     img: brick,
