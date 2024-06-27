@@ -23,7 +23,7 @@ const BestSelling = () => {
             .slice(44)
             .map(({ img, id, price, previousPrice, rate, percent }, index) => (
               <div key={index}>
-                <div className="relative py-3">
+                <div className="relative py-3 ">
                   <img src={img} alt={img} className="w-[100%]" />
                   <div className="text-silver flex items-start gap-44 px-2 absolute top-6 ">
                     <span className="bg-black text-center border-radius px-2 py-[0.3px] ">
@@ -34,7 +34,9 @@ const BestSelling = () => {
                       <MdOutlineRemoveRedEye className="bg-white text-blackk rounded-full text-center text-2xl cursor-pointer px-1" />
                     </div>
                   </div>
-                  <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius">Add To Cart</button>
+                  <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius">
+                    Add To Cart
+                  </button>
                 </div>
                 <div>
                   <p className="font-semibold text-lg capitalize">{id}</p>
