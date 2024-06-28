@@ -45,7 +45,7 @@ const Browse = () => {
   return (
     <section className="px-24 border-b-2 border-y-gray-500 py-5 my-8">
       <Card>
-        <div className="pb-4">
+        <div className="pb-8">
           <div className="font-semibold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
             Categories
           </div>
