@@ -20,9 +20,11 @@ export const data = [
     id: "construction chemical",
     img: pink,
     rate: "35",
+    rating: "2",
     percent: "40",
     price: "1,500",
     previousPrice: "3000",
+    new: "",
   },
 
   {
@@ -32,6 +34,8 @@ export const data = [
     percent: "99",
     previousPrice: "2,500",
     price: "2000",
+    new: "New",
+    rating: "4",
   },
   {
     id: "spades",
@@ -40,6 +44,8 @@ export const data = [
     previousPrice: "6,500",
     percent: "67",
     price: "5,500",
+    new: "New",
+    rating: "4",
   },
   {
     id: " ladders",
@@ -48,6 +54,8 @@ export const data = [
     percent: "35",
     price: "10,000",
     previousPrice: "12,000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "metals",
@@ -56,6 +64,8 @@ export const data = [
     percent: "90",
     price: "45,000",
     previousPrice: "47,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "construction chemical",
@@ -64,6 +74,8 @@ export const data = [
     percent: "25",
     price: "5000",
     previousPrice: "6000",
+    new: "New",
+    rating: "4",
   },
   {
     id: "bots",
@@ -72,6 +84,8 @@ export const data = [
     percent: "15",
     price: "4,500",
     previousPrice: "5000",
+    new: "New",
+    rating: "2",
   },
   {
     id: "tools box",
@@ -80,6 +94,8 @@ export const data = [
     percent: "20",
     price: "15,000",
     previousPrice: "16,500",
+    new: "New",
+    rating: "2",
   },
   {
     id: "double ladder",
@@ -88,6 +104,8 @@ export const data = [
     percent: "70",
     price: "35,000",
     previousPrice: "37,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "screw drivers",
@@ -96,6 +114,8 @@ export const data = [
     percent: "35",
     price: "2,500",
     previousPrice: "3000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "drilling device",
@@ -104,6 +124,8 @@ export const data = [
     percent: "77",
     previousPrice: "80,000",
     price: "78,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "drilling device",
@@ -112,6 +134,8 @@ export const data = [
     previousPrice: "67,00",
     percent: "67",
     price: "65,000",
+    new: "New",
+    rating: "3.5",
   },
   {
     id: "wheel barrow",
@@ -120,6 +144,8 @@ export const data = [
     percent: "67",
     price: "16,000",
     previousPrice: "17,000",
+    new: "New",
+    rating: "4.6",
   },
   {
     id: "brush",
@@ -128,6 +154,8 @@ export const data = [
     percent: "12",
     price: "1000",
     previousPrice: "1,500",
+    new: "New",
+    rating: "2",
   },
   {
     id: "construction chemicals",
@@ -136,6 +164,8 @@ export const data = [
     percent: "78",
     price: "11,000",
     previousPrice: "12,000",
+    new: "New",
+    rating: "5",
   },
 
   {
@@ -145,6 +175,8 @@ export const data = [
     percent: "55",
     price: "9,500",
     previousPrice: "10,000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "construction chemical",
@@ -153,6 +185,8 @@ export const data = [
     percent: "40",
     price: "1,500",
     previousPrice: "3000",
+    new: "New",
+    rating: "2",
   },
 
   {
@@ -162,6 +196,8 @@ export const data = [
     percent: "99",
     previousPrice: "2,500",
     price: "2000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "spades",
@@ -170,6 +206,8 @@ export const data = [
     previousPrice: "6,500",
     percent: "67",
     price: "5,500",
+    new: "New",
+    rating: "4",
   },
   {
     id: " ladders",
@@ -178,6 +216,8 @@ export const data = [
     percent: "35",
     price: "10,000",
     previousPrice: "12,000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "metals",
@@ -186,6 +226,8 @@ export const data = [
     percent: "90",
     price: "45,000",
     previousPrice: "47,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "construction chemical",
@@ -194,6 +236,8 @@ export const data = [
     percent: "25",
     price: "5000",
     previousPrice: "6000",
+    new: "New",
+    rating: "3.5",
   },
   {
     id: "bots",
@@ -202,6 +246,8 @@ export const data = [
     percent: "15",
     price: "4,500",
     previousPrice: "5000",
+    new: "New",
+    rating: "2.4",
   },
   {
     id: "tools box",
@@ -210,6 +256,8 @@ export const data = [
     percent: "20",
     price: "15,000",
     previousPrice: "16,500",
+    new: "",
+    rating: "2",
   },
   {
     id: "double ladder",
@@ -218,6 +266,8 @@ export const data = [
     percent: "70",
     price: "35,000",
     previousPrice: "37,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "screw drivers",
@@ -226,6 +276,8 @@ export const data = [
     percent: "35",
     price: "2,500",
     previousPrice: "3000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "drilling device",
@@ -234,6 +286,8 @@ export const data = [
     percent: "77",
     previousPrice: "80,000",
     price: "78,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "drilling device",
@@ -242,6 +296,8 @@ export const data = [
     previousPrice: "67,00",
     percent: "67",
     price: "65,000",
+    new: "New",
+    rating: "3.5",
   },
   {
     id: "wheel barrow",
@@ -250,6 +306,8 @@ export const data = [
     percent: "67",
     price: "16,000",
     previousPrice: "17,000",
+    new: "New",
+    rating: "4",
   },
   {
     id: "brush",
@@ -258,6 +316,8 @@ export const data = [
     percent: "12",
     price: "1000",
     previousPrice: "1,500",
+    new: "",
+    rating: "2.5",
   },
   {
     id: "construction chemicals",
@@ -266,6 +326,8 @@ export const data = [
     percent: "78",
     price: "11,000",
     previousPrice: "12,000",
+    new: "New",
+    rating: "5",
   },
 
   {
@@ -275,6 +337,8 @@ export const data = [
     percent: "55",
     price: "9,500",
     previousPrice: "10,000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "construction chemical",
@@ -283,6 +347,8 @@ export const data = [
     percent: "40",
     price: "1,500",
     previousPrice: "3000",
+    new: "New",
+    rating: "2",
   },
 
   {
@@ -292,6 +358,8 @@ export const data = [
     percent: "99",
     previousPrice: "2,500",
     price: "2000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "spades",
@@ -300,6 +368,8 @@ export const data = [
     previousPrice: "6,500",
     percent: "67",
     price: "5,500",
+    new: "",
+    rating: "4",
   },
   {
     id: " ladders",
@@ -308,6 +378,8 @@ export const data = [
     percent: "35",
     price: "10,000",
     previousPrice: "12,000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "metals",
@@ -316,6 +388,8 @@ export const data = [
     percent: "90",
     price: "45,000",
     previousPrice: "47,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "construction chemical",
@@ -324,6 +398,8 @@ export const data = [
     percent: "25",
     price: "5000",
     previousPrice: "6000",
+    new: "New",
+    rating: "3.5",
   },
   {
     id: "bots",
@@ -332,6 +408,8 @@ export const data = [
     percent: "15",
     price: "4,500",
     previousPrice: "5000",
+    new: "New",
+    rating: "2.5",
   },
   {
     id: "tools box",
@@ -340,6 +418,8 @@ export const data = [
     percent: "20",
     price: "15,000",
     previousPrice: "16,500",
+    new: "",
+    rating: "2",
   },
   {
     id: "double ladder",
@@ -348,6 +428,8 @@ export const data = [
     percent: "70",
     price: "35,000",
     previousPrice: "37,000",
+    new: "New",
+    rating: "5",
   },
   {
     id: "screw drivers",
@@ -356,6 +438,8 @@ export const data = [
     percent: "35",
     price: "2,500",
     previousPrice: "3000",
+    new: "New",
+    rating: "3",
   },
   {
     id: "drilling device",
@@ -364,6 +448,8 @@ export const data = [
     percent: "77",
     previousPrice: "80,000",
     price: "78,000",
+    new: "",
+    rating: "5",
   },
   {
     id: "drilling device",
@@ -372,6 +458,8 @@ export const data = [
     previousPrice: "67,00",
     percent: "67",
     price: "65,000",
+    new: "",
+    rating: "4",
   },
   {
     id: "wheel barrow",
@@ -380,6 +468,8 @@ export const data = [
     percent: "67",
     price: "16,000",
     previousPrice: "17,000",
+    new: "",
+    rating: "4.5",
   },
   {
     id: "brush",
@@ -388,6 +478,8 @@ export const data = [
     percent: "12",
     price: "1000",
     previousPrice: "1,500",
+    new: "New",
+    rating: "2",
   },
   {
     id: "construction chemicals",
@@ -396,6 +488,8 @@ export const data = [
     percent: "78",
     price: "11,000",
     previousPrice: "12,000",
+    new: "",
+    rating: "5",
   },
 
   {
@@ -405,5 +499,7 @@ export const data = [
     percent: "55",
     price: "9,500",
     previousPrice: "10,000",
+    new: "",
+    rating: "3",
   },
 ];
