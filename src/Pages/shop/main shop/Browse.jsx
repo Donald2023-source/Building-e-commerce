@@ -5,7 +5,6 @@ import chair from "../../../assets/chair.png";
 import farm from "../../../assets/farm.png";
 import power from "../../../assets/power.png";
 import spanner from "../../../assets/material-symbols.png";
-import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const data = [
@@ -56,7 +55,7 @@ const Browse = () => {
             <div key={index}>
               <Link
                 to={path}
-                className=" border border-gray-400 border-radius w-[9rem] py-8 h-28 justify-center flex flex-col items-center "
+                className=" border border-gray-400 border-radius hover:shadow-lg hover:shadow-silver w-[9rem] py-8 h-28 justify-center flex flex-col items-center "
               >
                 <img src={img} alt={img} />
                 <span className="text-wrap text-center font-semibold">

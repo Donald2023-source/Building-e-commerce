@@ -2,9 +2,22 @@ import { useEffect, useState } from "react";
 import { data } from "./ProductData";
 import { TbCurrencyNaira } from "react-icons/tb";
 
+// Function to shuffle an array
+function shuffleArray(array) {
+  let shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
 const TopSeller = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const topSellers = data.slice(40);
+
+  // Shuffle the data array and then slice it
+  const shuffledData = shuffleArray(data);
+  const topSellers = shuffledData.slice(36);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,7 +29,7 @@ const TopSeller = () => {
   const { img, id, price } = topSellers[currentIndex];
 
   return (
-    <div className="bg-white rounded-[4px] w-[30%] h-[22rem] ">
+    <div className="bg-white rounded-[4px] w-[30%] h-[22rem] hidden  lg:block">
       <div className="bg-black text-center text-xl font-bold rounded-[3px] py-2">
         <span>Top Seller</span>
       </div>

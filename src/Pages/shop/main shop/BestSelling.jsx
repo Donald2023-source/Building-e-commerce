@@ -49,7 +49,7 @@ const BestSelling = () => {
                           <MdOutlineRemoveRedEye className="bg-white text-blackk rounded-full text-center text-2xl cursor-pointer px-1" />
                         </div>
                       </div>
-                      <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius">
+                      <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius opacity-0 hover:opacity-100">
                         Add To Cart
                       </button>
                     </div>
@@ -60,9 +60,9 @@ const BestSelling = () => {
                           <TbCurrencyNaira className="text-xl font-semibold " />
                           <span>{price}</span>
                         </p>
-                        <p className="text-gray-700">
-                          <span className="">N</span>
-                          {previousPrice}
+                        <p className="flex items-center justify-center text-gray-700 line-through">
+                          <TbCurrencyNaira className="text-xl font-semibold " />
+                          <span>{previousPrice}</span>
                         </p>
                       </div>
                       <div className="flex items-center justify-normal gap-1">
@@ -105,20 +105,20 @@ const BestSelling = () => {
                           <MdOutlineRemoveRedEye className="bg-white text-blackk rounded-full text-center text-2xl cursor-pointer px-1" />
                         </div>
                       </div>
-                      <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius">
+                      <button className="bg-black text-white px-[5.85rem] text-nowrap text-center py-1 absolute bottom-3 border-radius opacity-0 hover:opacity-100">
                         Add To Cart
                       </button>
                     </div>
                     <div>
                       <p className="font-semibold text-lg capitalize">{id}</p>
                       <div className="flex items-center gap-3">
-                        <p className="text-fadedRed">
-                          <span>N</span>
-                          {price}
+                        <p className="flex items-center justify-center text-fadedRed">
+                          <TbCurrencyNaira className="text-xl font-semibold " />
+                          <span>{price}</span>
                         </p>
-                        <p className="text-gray-700">
-                          <span className="">N</span>
-                          {previousPrice}
+                        <p className="flex items-center justify-center text-gray-700 line-through">
+                          <TbCurrencyNaira className="text-xl font-semibold " />
+                          <span>{previousPrice}</span>
                         </p>
                       </div>
                       <div className="flex items-center justify-normal gap-1">
