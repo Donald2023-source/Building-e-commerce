@@ -59,7 +59,7 @@ const Explore = () => {
                           <TbCurrencyNaira className="text-xl font-semibold " />
                           <span>{price}</span>
                         </p>
-                        <p className="flex items-center justify-center text-gray-700 line-through">
+                        <p className="flex items-center justify-center text-gray-700 text-sm lg:text-lg line-through">
                           <TbCurrencyNaira className="text-sm md:text-xl font-semibold " />
                           <span>{previousPrice}</span>
                         </p>

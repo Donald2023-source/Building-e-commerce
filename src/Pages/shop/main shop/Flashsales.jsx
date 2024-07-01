@@ -61,7 +61,7 @@ const Flashsales = () => {
                       <p className="font-semibold text-sm md:text-lg capitalize">
                         {id}
                       </p>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex items-center text-sm lg:text-lg gap-3 ">
                         <p className="flex items-center justify-center text-sm text-fadedRed">
                           <TbCurrencyNaira className="text-xl font-semibold " />
                           <span>{price}</span>

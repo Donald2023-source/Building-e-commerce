@@ -57,10 +57,10 @@ const BestSelling = () => {
                       </button>
                     </div>
                     <div className="p-4">
-                      <p className="font-semibold text-sm md:text-lg capitalize">
+                      <p className="font-semibold text-sm md:text-lg capitalize ">
                         {id}
                       </p>
-                      <div className="flex items-center gap-3 ">
+                      <div className="flex  text-sm lg:text-lg items-center gap-3 ">
                         <p className="flex items-center justify-center text-sm text-fadedRed">
                           <TbCurrencyNaira className="text-xl font-semibold " />
                           <span>{price}</span>
@@ -121,7 +121,7 @@ const BestSelling = () => {
                       <p className="font-semibold text-sm md:text-lg capitalize">
                         {id}
                       </p>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center text-sm lg:text-lg gap-3">
                         <p className="flex items-center justify-center  text-sm md:text-lg text-fadedRed">
                           <TbCurrencyNaira className="text-sm md:text-lg font-semibold " />
                           <span>{price}</span>
