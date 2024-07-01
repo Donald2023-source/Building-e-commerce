@@ -39,7 +39,7 @@ const Hero = () => {
   const [revPerPage, setRevPerPage] = useState(1);
 
   return (
-    <section className="text-white flex items-center justify-between gap-3 px-24 ">
+    <section className="text-white flex px-2  items-center justify-between gap-3 lg:px-24 ">
       <Swiper
         spaceBetween={20}
         slidesPerView={revPerPage}
@@ -49,15 +49,17 @@ const Hero = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        className="mySwiper w-[70%] bg-black flex items-center px-4 justify-between rounded-[4px] py-10 gap-1"
+        className="mySwiper md:w-[100%] bg-black flex items-center px-4 justify-between rounded-[4px] py-10 gap-1"
       >
         {data.map(({ name, img }, i) => (
           <SwiperSlide
             key={i}
-            className="flex flex-col-reverse lg:flex-row items-center gap-36"
+            className="flex flex-col-reverse md:flex-row items-center gap-36"
           >
-            <div className="flex flex-col gap-3 pl-12 ">
-              <h2 className=" uppercase font-bold text-3xl">new</h2>
+            <div className="flex flex-col gap-3 md:pl-12 items-center pb-6 md:items-start ">
+              <h2 className=" uppercase font-bold text-5xl text-center md:text-3xl">
+                new
+              </h2>
               <p className=" capitalize font-medium text-2xl whitespace-nowrap">
                 construction {name}
               </p>

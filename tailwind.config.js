@@ -8,6 +8,7 @@ export default {
         cantaloupe: "#FFAD33",
         silver: "#C6C6C6",
         blackk: "#1B1212",
+        blacked: "#000e",
       },
     },
   },
