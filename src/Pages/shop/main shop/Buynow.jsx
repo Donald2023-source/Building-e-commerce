@@ -86,7 +86,7 @@ const Buynow = () => {
                       </div>
                     </div>
                     <Link to={"#"} className="flex items-center gap-1">
-                      <Button className={"bg-slate-50 text-black"}>
+                      <Button className={"bg-red-700 text-black"}>
                         Buy Now
                       </Button>
                     </Link>

@@ -8,13 +8,13 @@ import { useState } from "react";
 import { TbCurrencyNaira } from "react-icons/tb";
 
 const Explore = () => {
-  const [isViewAll, setIsViewAll] = useState(false);
+  const [isViewAll, setIsViewAll] = useState(true);
 
   const handleClick = () => {
     setIsViewAll(!isViewAll);
   };
   return (
-    <section className="lg:px-24 md:px-2 sm:px-8 px-2 py-5 my-8 border-b-2 border-y-gray-500">
+    <section className="lg:px-24 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
       <Card>
         <div className="pb-4">
           <div className="font-bold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">

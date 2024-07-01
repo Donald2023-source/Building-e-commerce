@@ -39,7 +39,7 @@ const Hero = () => {
   const [revPerPage, setRevPerPage] = useState(1);
 
   return (
-    <section className="text-white flex px-2  items-center justify-between gap-3 lg:px-24 ">
+    <section className="text-white flex px-2 pt-1 md:pt-6 lg:pt-0  items-center justify-between gap-3 lg:px-24 ">
       <Swiper
         spaceBetween={20}
         slidesPerView={revPerPage}
