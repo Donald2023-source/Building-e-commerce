@@ -6,6 +6,7 @@ import { data } from "./ProductData";
 import Card from "./Card";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { useState } from "react";
+import CountdownTimer from "./CountdownTimer";
 const Flashsales = () => {
   const [isViewAll, setIsViewAll] = useState(false);
 
@@ -20,9 +21,9 @@ const Flashsales = () => {
             Today's
           </div>
           <div className="flex justify-between items-center gap-2 text-nowrap">
-            <div className="flex gap-12 items-center">
+            <div className="flex gap-12 items-center justify-start">
               <p className="font-semibold text-xl">Flash Sales</p>
-              <div>timer</div>
+              <CountdownTimer />
             </div>
             <Button onClick={handleClick}>
               {isViewAll ? "View Less" : "View All "}

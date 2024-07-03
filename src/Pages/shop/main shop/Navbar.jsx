@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Searchbar from "./Searchbar";
 import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
@@ -56,13 +56,13 @@ const Navbar = () => {
       >
         <ul className="flex flex-col lg:flex-row items-center  justify-start gap-6 font-semibold text-[16px] py- uppercase">
           {data.map(({ name, path }, i) => (
-            <Link
+            <NavLink
               key={i}
               to={path}
               className=" px-1 text-nowrap hover:text-fadedRed"
             >
               {name}
-            </Link>
+            </NavLink>
           ))}
         </ul>
       </div>

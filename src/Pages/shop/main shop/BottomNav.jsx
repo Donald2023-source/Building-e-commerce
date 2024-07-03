@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import home from "../../../assets/home-btn.png";
 import save from "../../../assets/save-btn.png";
 import search from "../../../assets/searchBtn.png";
@@ -35,7 +35,11 @@ const data = [
 ];
 const BottomNav = () => {
   const [IsFixed, setIsFixed] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
 
+  const toggleMenu = () => {
+    setIsHidden(!isHidden);
+  };
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -62,6 +66,26 @@ const BottomNav = () => {
           : ""
       }`}
     >
+      <div
+        className={`${
+          isHidden
+            ? "hidden"
+            : "absolute bottom-0  py-2 text-center w-[86%] px-8"
+        }`}
+      >
+        <ul className="flex flex-col lg:flex-row items-center  justify-start gap-6 font-semibold text-[16px] py- uppercase">
+          {data.map(({ name, path }, i) => (
+            <NavLink
+              key={i}
+              to={path}
+              className=" px-1 text-nowrap hover:text-fadedRed"
+              onClick={toggleMenu}
+            >
+              {name}
+            </NavLink>
+          ))}
+        </ul>
+      </div>
       {data.map(({ name, img, path }, i) => (
         <Link
           key={i}
