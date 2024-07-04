@@ -50,7 +50,7 @@ const Nav = () => {
           </div>
           <div>
             <input
-              className="p-2 lg:hidden mt-3 rounded-md w-[18rem] mx-auto flex border-black border-2"
+              className="p-2 hidden mt-3 rounded-md w-[18rem] mx-auto flex border-black border-2"
               type="Search"
               placeholder="Search for products"
             />

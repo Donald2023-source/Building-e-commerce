@@ -1,5 +1,6 @@
 import Container from "../../../components/Container";
 import BestSelling from "./BestSelling";
+import BottomNav from "./BottomNav";
 import Browse from "./Browse";
 import Buynow from "./Buynow";
 import Explore from "./Explore";
@@ -21,8 +22,8 @@ const Shop = () => {
         <FeaturedProduct />
         <Buynow />
         <Explore />
-        <Buynow />
         <Subscribe />
+        <BottomNav />
       </Container>
     </section>
   );
