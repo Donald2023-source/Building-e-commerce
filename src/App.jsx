@@ -1,28 +1,21 @@
-
-import Home from "./Pages/Home/Home"
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom"
-import Nav from "./Pages/Home/nav"
-import Footer from "./Pages/Home/Footer"
-import SignUp from "./Pages/Access/SignUp/"
-import './App.css'
-
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+// import Home from "./Pages/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUp from "./Pages/Access/SignUp/";
 import "./App.css";
 import Shop from "./Pages/shop/main shop/Shop";
-
+// import Categories from "./Pages/shop/categories/Categories";
+import ConstructionChemicals from "./Pages/shop/categories/ConstructionChemicals";
 
 const App = () => {
   return (
     <>
-
-     <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={ <SignUp/>} />
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/" element={<Shop />} />
+          <Route path="/" element={<ConstructionChemicals />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
-
     </>
   );
 };

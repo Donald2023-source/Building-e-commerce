@@ -1,4 +1,4 @@
-import Container from "../../../components/Container";
+import Container from "../../components/Container";
 import Preview from "./preview";
 
 const Home = () => {
