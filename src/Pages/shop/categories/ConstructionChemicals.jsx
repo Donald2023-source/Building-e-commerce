@@ -30,7 +30,6 @@ const ConstructionChemicals = () => {
   const displayData = isViewAll
     ? data.slice(32)
     : data.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-
   return (
     <div>
       <Categories>
