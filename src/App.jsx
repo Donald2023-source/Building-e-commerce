@@ -1,21 +1,14 @@
-// import Home from "./Pages/Home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignUp from "./Pages/Access/SignUp/";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "./routes/Route";
 import "./App.css";
-import Shop from "./Pages/shop/main shop/Shop";
-// import Categories from "./Pages/shop/categories/Categories";
-import ConstructionChemicals from "./Pages/shop/categories/ConstructionChemicals";
+
+/*You look at the routes object in the routes file*/
+const router = createBrowserRouter([routes]);
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ConstructionChemicals />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/signup" element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </>
   );
 };

@@ -8,28 +8,24 @@ import { useState } from "react";
 import { TbCurrencyNaira } from "react-icons/tb";
 import Categories from "./Categories";
 
-const ITEMS_PER_PAGE = 4;
+const ItemsPerPage = 16;
 
 const ConstructionChemicals = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [isViewAll, setIsViewAll] = useState(false);
-
-  const handleClick = () => {
-    setIsViewAll(!isViewAll);
-  };
 
   const handleNext = () => {
-    setCurrentPage((prevPage) => prevPage + 1);
+    setCurrentPage((prevPage) => (prevPage === data.length ? 0 : prevPage + 1));
   };
 
   const handlePrevious = () => {
     setCurrentPage((prevPage) => (prevPage > 0 ? prevPage - 1 : 0));
   };
 
-  const startIndex = currentPage * ITEMS_PER_PAGE;
-  const displayData = isViewAll
-    ? data.slice(32)
-    : data.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const startIndex = currentPage * ItemsPerPage;
+  const displayData = data.slice(
+    16 + startIndex,
+    28 + startIndex + ItemsPerPage
+  );
 
   return (
     <div>
@@ -38,10 +34,10 @@ const ConstructionChemicals = () => {
           <Card>
             <div className="pb-4">
               <div className="font-bold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
-                Our Products
+                Category
               </div>
               <p className="font-semibold text-2xl pt-2">
-                Explore Our Products
+                Construction Chemicals
               </p>
             </div>
             <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
@@ -101,16 +97,18 @@ const ConstructionChemicals = () => {
                 )
               )}
             </div>
-            <div className="flex items-center justify-between pt-8">
-              <Button onClick={handlePrevious} disabled={currentPage === 0}>
-                Previous
-              </Button>
-              <Button onClick={handleClick}>
-                {isViewAll ? "View Less" : "View All Products"}
+            <div className="flex items-center justify-center gap-6 pt-8">
+              <Button
+                onClick={handlePrevious}
+                disabled={currentPage === 0}
+                className="capitalize text-center"
+              >
+                Prev
               </Button>
               <Button
                 onClick={handleNext}
-                disabled={startIndex + ITEMS_PER_PAGE >= data.length}
+                disabled={startIndex + ItemsPerPage >= data.length - 20}
+                className="capitalize text-center"
               >
                 Next
               </Button>
