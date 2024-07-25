@@ -25,8 +25,7 @@ const data = [
 const Subscribe = () => {
   return (
     <section className="lg:px-24 px-2 py-6 my-8">
-      {/* // Fix this section bg-color and the subscribe container */}
-      <Card className={" bg-bgGr"}>
+      <Card className={" bg-transparent"}>
         <div className="flex flex-col lg:flex-row items-center justify-around gap-10 px-28">
           {data.map(({ icon, name, context }, i) => (
             <div key={i} className="flex flex-col items-center gap-6 text-xl">
@@ -50,10 +49,12 @@ const Subscribe = () => {
           <div className="flex items-center gap-4 mx-10">
             <input
               type="email"
-              className="p-2 border-radius"
+              className="p-2 border-radius bg-black border border-slate-50"
               placeholder="Enter your email "
             />
-            <Button className={" text-black"}>Subscribe Now </Button>
+            <Button className={"  bg-white text-blacked font-semibold"}>
+              Subscribe Now{" "}
+            </Button>
           </div>
         </div>
       </Card>

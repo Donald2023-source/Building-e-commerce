@@ -28,6 +28,7 @@ const FarmMaterials = () => {
   );
   return (
     <div>
+      Farm Materials
       <Categories>
         <section className="lg:px-24 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
           <Card>

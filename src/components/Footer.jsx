@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-black w-screen">
-        <div className="flex items-center justify-center  gap-10 lg:gap-40 mt-7 text-white py-20">
+        <div className="flex items-center justify-center gap-10 lg:gap-40 mt-7 text-white py-20">
           <div>
             <img src={logo} alt="" />
 
-            <p className="w-[19rem] leading-10 text-sm lg:text-lg">
+            <p className="lg:w-[19rem] leading-10 text-sm lg:text-lg">
               Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in
               suscipit turpis enim cursus vulputate amet. Lobortis mi platea
               aliquam senectus tempus mauris neque.
