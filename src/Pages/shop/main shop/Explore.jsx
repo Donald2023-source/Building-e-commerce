@@ -14,7 +14,7 @@ const Explore = () => {
     setIsViewAll(!isViewAll);
   };
   return (
-    <section className="lg:px-24 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
+    <section className="lg:px-24 px-2 py-5 my-8 ">
       <Card>
         <div className="pb-4">
           <div className="font-bold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">

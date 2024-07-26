@@ -8,7 +8,7 @@ import Categories from "./Categories";
 import Button from "../main shop/Button.jsx";
 import { FaStar } from "react-icons/fa";
 
-const ItemsPerPage = 16;
+const ItemsPerPage = 8;
 const Furniture = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -22,22 +22,19 @@ const Furniture = () => {
 
   const startIndex = currentPage * ItemsPerPage;
   const displayData = data.slice(
-    16 + startIndex,
+    8 + startIndex,
     28 + startIndex + ItemsPerPage
   );
   return (
     <div>
-      Farm Materials
       <Categories>
-        <section className="lg:px-24 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
+        <section className="lg:px-24 px-2 pb-5 my-8 lg:border-b-2 lg:border-y-gray-500">
           <Card>
             <div className="pb-4">
               <div className="font-bold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
                 Category
               </div>
-              <p className="font-semibold text-2xl pt-2">
-                Construction Chemicals
-              </p>
+              <p className="font-semibold text-2xl pt-2">Furniture</p>
             </div>
             <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
               {displayData.map(
