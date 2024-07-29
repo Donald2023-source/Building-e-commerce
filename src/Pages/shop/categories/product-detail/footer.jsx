@@ -4,7 +4,7 @@ import delivery from "../../../../assets/white-delivery.png";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-start gap-4 px-2">
-      <section className="w-[70%] bg-black text-white flex items-center justify-between p-6 rounded-xl">
+      <section className="w-[70%] bg-black text-white flex items-center justify-between py-3 px-5 rounded-xl">
         <div className="flex items-center gap-4">
           <img src={delivery} alt={delivery} className="w-[30%]" />
           <span>
@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <img src={verified} alt={verified} />
       </section>
-      <section className="w-[70%] bg-white text-black border-2 border-gray-500  flex items-center justify-between p-6 rounded-xl">
+      <section className="w-[70%] bg-white text-black border-2 border-gray-500  flex items-center justify-between py-3 px-5 rounded-xl">
         <div className="flex items-center gap-4">
           <img src={pickUp} alt={pickUp} />
           <span>
