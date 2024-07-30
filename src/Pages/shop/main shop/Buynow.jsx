@@ -42,26 +42,26 @@ const Buynow = () => {
   const [revPerPage, setRevPerPage] = useState(1);
   return (
     <section className="px-2 lg:px-24 py-5 my-8">
-      <Card className={"bg-blacked text-white "}>
+      <Card className={"bg-[#000000] "}>
         <Swiper
           spaceBetween={20}
           slidesPerView={revPerPage}
           modules={[Navigation, Pagination, A11y, Virtual, Autoplay]}
           autoplay={{
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: false }}
-          className="mySwiper"
+          className="mySwiper "
         >
           {data.map(({ name, img, price, rating, category }, i) => (
             <SwiperSlide key={i}>
               <div className="flex flex-col-reverse lg:flex-row items-center px-4 justify-between rounded-[4px] py-10 gap-6 lg:gap-1">
                 <div className="flex flex-col gap-3 text-center lg:text-left lg:pl-12">
-                  <p className="capitalize font-semibold text-2xl text-black">
+                  <p className="capitalize font-semibold text-2xl text-white">
                     {category}
                   </p>
-                  <h2 className="capitalize font-bold text-3xl lg:text-5xl text-black py-5">
+                  <h2 className="capitalize font-bold text-3xl lg:text-5xl text-white py-5">
                     {name}
                   </h2>
                   <div className="flex flex-col items-center lg:items-start gap-6">
@@ -86,8 +86,8 @@ const Buynow = () => {
                       </div>
                     </div>
                     <Link to={"#"} className="flex items-center gap-1">
-                      <Button className={"bg-red-700 text-black"}>
-                        Buy Now
+                      <Button className={"bg-white text-[#000] font-medium"}>
+                        Buy Now!
                       </Button>
                     </Link>
                   </div>

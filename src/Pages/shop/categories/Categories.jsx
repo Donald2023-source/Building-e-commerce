@@ -4,12 +4,11 @@ import Container from "../../../components/Container.jsx";
 import PropTypes from "prop-types";
 import Navbar from "../main shop/Navbar.jsx";
 
-const Categories = ({ children }) => {
+const Categories = () => {
   return (
     <section className="bg-silver">
       <Container>
-        <Navbar/>
-        {children}
+        <Navbar />
         <RecentlyViewed />
         <Subscribe />
       </Container>

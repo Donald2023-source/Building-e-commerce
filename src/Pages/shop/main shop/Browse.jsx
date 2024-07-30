@@ -5,17 +5,17 @@ import chair from "../../../assets/chair.png";
 import farm from "../../../assets/farm.png";
 import power from "../../../assets/power.png";
 import spanner from "../../../assets/material-symbols.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const data = [
   {
     name: "construction chemicals",
-    path: "construction chemicals",
+    path: "construction-chemicals",
     img: chemical,
   },
   {
     name: "construction materials",
-    path: "construction materials",
+    path: "construction-materials",
     img: spanner,
   },
   {
@@ -25,7 +25,7 @@ const data = [
   },
   {
     name: "farm materials",
-    path: "farm materials",
+    path: "farm-materials",
     img: farm,
   },
   {
@@ -42,7 +42,7 @@ const data = [
 
 const Browse = () => {
   return (
-    <section className=" hidden lg:block lg:px-24 md:px-2 sm:px-8 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
+    <section className="hidden lg:block lg:px-24 md:px-2 sm:px-8 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
       <Card className="bg-white">
         <div className="pb-8">
           <div className="font-semibold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
@@ -50,10 +50,10 @@ const Browse = () => {
           </div>
           <p className="font-semibold text-xl">Browse By Category</p>
         </div>
-        <div className="flex flex-wrap gap-5  items-center justify-around">
+        <div className="flex flex-wrap gap-5 items-center justify-around">
           {data.map(({ name, path, img }, index) => (
             <div key={index} className="flex justify-center">
-              <Link
+              <NavLink
                 to={path}
                 className="border border-gray-400 rounded-lg hover:shadow-lg hover:shadow-silver w-[9rem] py-8 h-28 flex flex-col items-center justify-center"
               >
@@ -61,7 +61,7 @@ const Browse = () => {
                 <span className="text-wrap text-center font-semibold">
                   {name}
                 </span>
-              </Link>
+              </NavLink>
             </div>
           ))}
         </div>

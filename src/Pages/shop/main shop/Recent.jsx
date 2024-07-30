@@ -4,11 +4,10 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { data } from "./ProductData";
 import Card from "./Card";
 import { TbCurrencyNaira } from "react-icons/tb";
-import { useState } from "react";
 
 const RecentlyViewed = () => {
   return (
-    <section className="lg:px-24 md:px-2 sm:px-8 px-2 py-5 my-8 lg:border-b-2 lg:border-y-gray-500">
+    <section className=" md:px-2 sm:px-8 px-2 py-5 my-8 ">
       <Card className="bg-white">
         <div className="pb-4">
           <div className="font-bold text-sm border-l-[12px] border-radius px-2 py-1 border-l-black">
