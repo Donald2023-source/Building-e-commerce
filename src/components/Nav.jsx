@@ -42,7 +42,7 @@ const Nav = () => {
                 <Link to={"about"}>
                   <li>About us</li>
                 </Link>
-                <Link to={"contact us"}>
+                <Link to={"contact"}>
                   <li>Contact us</li>
                 </Link>
               </ul>

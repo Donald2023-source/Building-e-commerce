@@ -1,4 +1,4 @@
-import Card from "../../main shop/Card";
+import Card from "../main shop/Card";
 import rate4 from "../../../../assets/rate49.png";
 import rate5 from "../../../../assets/rate5.png";
 import star from "../../../../assets/four-star2.png";
@@ -57,7 +57,7 @@ export default function Reviews() {
                 </div>
               </div>
               <div className=" flex flex-col  gap-2 items-start">
-                <img src={img} alt={img} />
+                <img src={img} alt="image" />
                 <span>Lorem ipsum dolor sit amet consectetur.</span>
               </div>
             </div>

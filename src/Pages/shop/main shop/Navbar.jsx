@@ -3,29 +3,30 @@ import Searchbar from "./Searchbar";
 import { IoMdMenu } from "react-icons/io";
 import { useState, useEffect } from "react";
 
+const baseUrl = "categories";
 const data = [
   {
-    path: "construction-Chemical",
+    path: baseUrl + "/construction-Chemical",
     name: "Construction Chemical",
   },
   {
-    path: "construction-material",
+    path: baseUrl + "/construction-material",
     name: "Construction material",
   },
   {
-    path: "electronics",
+    path: baseUrl + "/electronics",
     name: "electronics",
   },
   {
-    path: "farm-materials",
+    path: baseUrl + "/farm-materials",
     name: "farm materials",
   },
   {
-    path: "furniture",
+    path: baseUrl + "/furniture",
     name: "furniture",
   },
   {
-    path: "paints",
+    path: baseUrl + "/paints",
     name: "paints",
   },
 ];

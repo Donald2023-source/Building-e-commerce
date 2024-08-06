@@ -12,7 +12,7 @@ import Subscribe from "../../main shop/Subscribe";
 const ProductDetails = () => {
   return (
     <Container>
-      <section className="bg-gray-300 px-28">
+      <section className="bg-gray-300 px-28 w-full">
         <main className="flex items-start justify-start gap-6 ">
           <section className="flex ">
             <aside className=" flex flex-col gap-4 py-6 w-[80%">
