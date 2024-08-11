@@ -46,8 +46,12 @@ const Navbar = () => {
     }
   }, [location]);
 
-  const toggleMenu = () => {
+  const openMenu = () => {
     setIsHidden(!isHidden);
+  };
+
+  const closeMenu = () => {
+    setIsHidden(isHidden);
   };
 
   return (
@@ -55,7 +59,8 @@ const Navbar = () => {
       <div className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center">
         <IoMdMenu
           className="text-white text-3xl cursor-pointer"
-          onClick={toggleMenu}
+          onMouseOver={openMenu}
+          
         />
         <span className="uppercase text-white">Browse Categories</span>
       </div>
@@ -64,10 +69,10 @@ const Navbar = () => {
         className={`${
           isHidden
             ? "hidden"
-            : "absolute bottom-0 py-2 text-center w-[86%] px-8"
+            : "absolute top-24 z-50 bg-slate-100 py-2 flex flex-col items-center justify-center rounded-lg  w-[20%] h-[25rem] shadow-lg  "
         }`}
       >
-        <ul className="flex flex-col lg:flex-row items-center justify-start gap-6 font-semibold text-[16px] py- uppercase">
+        <ul className="flex flex-col  items-center justify-center gap-6 font-semibold text-[16px] py- uppercase">
           {data.map(({ name, path }, i) => (
             <NavLink
               key={i}
