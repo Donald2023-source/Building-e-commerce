@@ -1,51 +1,65 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignUp from "./Pages/Access/SignUp/";
-// import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 import Shop from "./Pages/shop/main shop/Shop";
-import ConstructionChemicals from "./Pages/shop/categories/ConstructionChemicals";
-import ConstructionMaterials from "./Pages/shop/categories/ConstructionMaterials";
-import Electronics from "./Pages/shop/categories/Electronics";
-import FarmMaterials from "./Pages/shop/categories/FarmMaterials";
-import Furniture from "./Pages/shop/categories/Furniture";
-import Paints from "./Pages/shop/categories/Paints";
-import ProductDetails from "./Pages/shop/categories/product-detail/ProductDetails";
-import Errorpage from "./components/error";
-import Layout from "./Pages/layout/layout";
+import Errorpage from "./components/error"; 
 import Categories from "./Pages/shop/categories/Categories";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<ProductDetails />}>
-      <Route path="signup" element={<SignUp />} />
-      <Route path="shop" element={<Shop />}>
-        <Route element={<Layout />} />
-        <Route path="categories" element={<Categories />} />
-        <Route
-          path="categories/construction-chemicals"
-          element={<ConstructionChemicals />}
-        />
-        <Route
-          path="categories/construction-materials"
-          element={<ConstructionMaterials />}
-        />
-        <Route path="categories/electronics" element={<Electronics />} />
-        <Route path="categories/farm-materials" element={<FarmMaterials />} />
-        <Route path="categories/furniture" element={<Furniture />} />
-        <Route path="categories/paints" element={<Paints />} />
-        <Route path="categories/product/:id" element={<ProductDetails />} />
-      </Route>
-      <Route path="*" element={<Errorpage />} />
-    </Route>
-  )
-);
+import RootLayout from "./Pages/layout/RootLayout";
+import ShopLayout from "./Pages/shop/main shop/ShopLayout";
+import SearchPage from "./components/SearchPage";
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <RouterProvider
+      router={createBrowserRouter([
+        {
+          path: "/",
+          element: <RootLayout />,
+          errorElement: <Errorpage />,
+          children: [
+            {
+              index: true,
+              element: <Home />,
+            },
+            {
+              path: "shop",
+              element: <ShopLayout />,
+              children: [
+                {
+                  index: true,
+                  element: <Shop />,
+                },
+                {
+                  path: "categories/:name",
+                  element: <Categories />,
+                },
+                {
+                  path: "search",
+                  element: <SearchPage />,
+                },
+              ],
+            },
+            {
+              path: "about",
+              element: <>About</>,
+            },
+            {
+              path: "contact",
+              element: <>Contact</>,
+            },
+            {
+              path: "signup",
+              element: <SignUp />,
+            },
+            {
+              path: "signin",
+              element: <>Sign In</>,
+            },
+          ],
+        },
+      ])}
+    />
+  );
 };
 
 export default App;

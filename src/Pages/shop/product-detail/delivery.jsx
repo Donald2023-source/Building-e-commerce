@@ -1,7 +1,7 @@
 import pickUp from "../../../../assets/pick-up.png";
 import verified from "../../../../assets/Frame-v.png";
 import delivery from "../../../../assets/white-delivery.png";
-export default function Footer() {
+export default function Delivery() {
   return (
     <footer className="flex flex-col items-start gap-4 px-2">
       <section className="w-[70%] bg-black text-white flex items-center justify-between py-3 px-5 rounded-xl">
