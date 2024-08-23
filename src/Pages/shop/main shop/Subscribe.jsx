@@ -24,8 +24,8 @@ const data = [
 
 const Subscribe = () => {
   return (
-    <section className=" bg-gray-200 lg:px-24 px-2 py-6 my-8">
-      <Card className={"bg-gray-200 "}>
+    <section className=" bg-silver lg:px-24 px-2 py-6 ">
+      <Card className="bg-transparent ">
         <div className="flex flex-col lg:flex-row items-center justify-around gap-10 px-28">
           {data.map(({ icon, name, context }, i) => (
             <div key={i} className="flex flex-col items-center gap-6 text-xl">
@@ -40,7 +40,7 @@ const Subscribe = () => {
         <div className="hidden  bg-black text-white p-4 rounded-lg mt-32 lg:flex  items-center justify-between">
           <div>
             <span className="uppercase font-bold text-xl">
-              Subscribe to get updated{" "}
+              Subscribe to get updated
             </span>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis.
@@ -49,11 +49,11 @@ const Subscribe = () => {
           <div className="flex items-center gap-4 mx-10">
             <input
               type="email"
-              className="p-2 border-radius bg-black border border-slate-50"
+              className="p-2 border-radius bg-blacked border border-slate-50"
               placeholder="Enter your email "
             />
-            <Button className={"  bg-white text-red-500 font-semibold"}>
-              Subscribe Now{" "}
+            <Button className="bg-white text-blacked font-semibold">
+              Subscribe Now
             </Button>
           </div>
         </div>
