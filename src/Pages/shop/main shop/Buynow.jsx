@@ -42,7 +42,7 @@ const Buynow = () => {
   const [revPerPage, setRevPerPage] = useState(1);
   return (
     <section className="px-2 lg:px-24 py-5 my-8">
-      <Card className={"bg-[#000000] "}>
+      <Card className="bg-blacked ">
         <Swiper
           spaceBetween={20}
           slidesPerView={revPerPage}
@@ -86,9 +86,9 @@ const Buynow = () => {
                       </div>
                     </div>
                     <Link to={"#"} className="flex items-center gap-1">
-                      <Button className={"bg-white text-[#000] font-medium"}>
+                      <button className="bg-white text-blackk  py-2 text-center px-6 border-radius font-medium">
                         Buy Now!
-                      </Button>
+                      </button>
                     </Link>
                   </div>
                 </div>

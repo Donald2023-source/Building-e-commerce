@@ -1,9 +1,7 @@
 import { useState } from "react";
 import Button from "../Access/Button";
 import Conditions from "../Access/Conditions";
-
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Container from "../../components/Container";
 
 function SignUp() {
   const [firstName, setFirstName] = useState("");

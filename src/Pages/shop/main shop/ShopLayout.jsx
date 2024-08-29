@@ -4,11 +4,11 @@ import Subscribe from "../main shop/Subscribe";
 
 const ShopLayout = () => {
   return (
-    <>
+    <section className=" bg-silver">
       <Navbar />
       <Outlet />
       <Subscribe />
-    </>
+    </section>
   );
 };
 
