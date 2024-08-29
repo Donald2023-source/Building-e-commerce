@@ -3,29 +3,30 @@ import Searchbar from "./Searchbar";
 import { IoMdMenu } from "react-icons/io";
 import { useState, useEffect } from "react";
 
+const baseUrl = "categories";
 const data = [
   {
-    path: "construction-Chemical",
+    path: baseUrl + "/construction-Chemical",
     name: "Construction Chemical",
   },
   {
-    path: "construction-material",
+    path: baseUrl + "/construction-material",
     name: "Construction material",
   },
   {
-    path: "electronics",
+    path: baseUrl + "/electronics",
     name: "electronics",
   },
   {
-    path: "farm-materials",
+    path: baseUrl + "/farm-materials",
     name: "farm materials",
   },
   {
-    path: "furniture",
+    path: baseUrl + "/furniture",
     name: "furniture",
   },
   {
-    path: "paints",
+    path: baseUrl + "/paints",
     name: "paints",
   },
 ];
@@ -38,24 +39,25 @@ const Navbar = () => {
   useEffect(() => {
     const currentPath = location.pathname;
     const found = data.find((item) => item.path === currentPath);
-    if (found) {
-      setActiveLink(found.path);
-    } else {
-      setActiveLink("");
-    }
-  }, [location]);
+    setActiveLink(found ? found.path : "");
+  }, [location.pathname]);
 
-  const toggleMenu = () => {
-    setIsHidden(!isHidden);
+  const openMenu = () => {
+    setIsHidden(false); 
+  };
+
+  const closeMenu = () => {
+    setIsHidden(true); 
   };
 
   return (
-    <nav className="lg:flex py-8 gap-8 px-24 items-center hidden relative">
+    <nav
+      className="lg:flex py-8 gap-8 px-24 items-center hidden relative"
+      onMouseEnter={openMenu}
+      onMouseLeave={closeMenu}
+    >
       <div className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center">
-        <IoMdMenu
-          className="text-white text-3xl cursor-pointer"
-          onClick={toggleMenu}
-        />
+        <IoMdMenu className="text-white text-3xl cursor-pointer" />
         <span className="uppercase text-white">Browse Categories</span>
       </div>
       <Searchbar />
@@ -63,17 +65,19 @@ const Navbar = () => {
         className={`${
           isHidden
             ? "hidden"
-            : "absolute bottom-0 py-2 text-center w-[86%] px-8"
+            : "absolute top-24 z-50 bg-slate-100 py-2 flex flex-col items-center justify-center rounded-lg  w-[20%] h-[25rem] shadow-lg  "
         }`}
       >
-        <ul className="flex flex-col lg:flex-row items-center justify-start gap-6 font-semibold text-[16px] py- uppercase">
+        <ul className="flex flex-col  items-center justify-center gap-6 font-semibold text-[16px] py- uppercase">
           {data.map(({ name, path }, i) => (
             <NavLink
               key={i}
               to={path}
-              className={`px-1 text-nowrap hover:transform hover:scale-110 transition-transform duration-300 ${
-                path === activeLink ? "text-fadedRed" : ""
-              }`}
+              className={({ isActive }) =>
+                `px-1 text-nowrap hover:transform hover:text-fadedRed ${
+                  isActive ? "text-fadedRed" : ""
+                }`
+              }
             >
               {name}
             </NavLink>
