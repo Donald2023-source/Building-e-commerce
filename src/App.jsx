@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import SignUp from "./Pages/Access/SignUp/";
-// import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 import Shop from "./Pages/shop/main shop/Shop";
 import ConstructionChemicals from "./Pages/shop/categories/ConstructionChemicals";
 import ConstructionMaterials from "./Pages/shop/categories/ConstructionMaterials";
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route path="signup" element={<SignUp />} />
       <Route path="shop" element={<Shop />}>
         <Route element={<Layout />} />
-        <Route path="categories" element={<Categories />} />
+        {/* <Route path="categories" element={<Categories />} /> */}
         <Route
           path="categories/construction-chemicals"
           element={<ConstructionChemicals />}

@@ -12,6 +12,7 @@ const Home = () => {
         <Services/>
        <BrowseCategory/>
        <FeaturedProducts/>
+       
       </Container>
     </div>
   );
