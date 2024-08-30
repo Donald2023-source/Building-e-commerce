@@ -7,6 +7,7 @@ import Categories from "./Pages/shop/categories/Categories";
 import RootLayout from "./Pages/layout/RootLayout";
 import ShopLayout from "./Pages/shop/main shop/ShopLayout";
 import SearchPage from "./components/SearchPage";
+import About from "./Pages/About/About";
 
 const App = () => {
   return (
@@ -41,7 +42,7 @@ const App = () => {
             },
             {
               path: "about",
-              element: <>About</>,
+              element: <About/>,
             },
             {
               path: "contact",
