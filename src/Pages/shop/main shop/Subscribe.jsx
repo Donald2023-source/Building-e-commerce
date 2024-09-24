@@ -1,5 +1,3 @@
-import Button from "./Button";
-import Card from "./Card";
 import cartIcon from "../../../assets/cart-icon.png";
 import verified from "../../../assets/verified.png";
 import services from "../../../assets/Services.png";
@@ -25,7 +23,7 @@ const data = [
 const Subscribe = () => {
   return (
     <section className=" bg-silver lg:px-24 px-2 py-6 ">
-      <Card className="bg-transparent ">
+      <div className="bg-transparent ">
         <div className="flex flex-col lg:flex-row items-center justify-around gap-10 px-28">
           {data.map(({ icon, name, context }, i) => (
             <div key={i} className="flex flex-col items-center gap-6 text-xl">
@@ -52,12 +50,12 @@ const Subscribe = () => {
               className="p-2 border-radius bg-blacked border border-slate-50"
               placeholder="Enter your email "
             />
-            <Button className="bg-white text-blacked font-semibold">
+            <button className="bg-white text-blacked font-semibold  py-2 text-center px-6 border-radius">
               Subscribe Now
-            </Button>
+            </button>
           </div>
         </div>
-      </Card>
+      </div>
     </section>
   );
 };

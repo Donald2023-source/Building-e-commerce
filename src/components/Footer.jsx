@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
       <hr className="py-2 mx-40" />
       <h2 className="text-gray-500 text-center py-3">
-        Copyright nHub 2024. All right reserved
+        Copyright Tekhub 2024. All right reserved
       </h2>
     </footer>
   );

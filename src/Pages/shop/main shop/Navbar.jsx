@@ -43,21 +43,23 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const openMenu = () => {
-    setIsHidden(false); 
+    setIsHidden(false);
   };
 
   const closeMenu = () => {
-    setIsHidden(true); 
+    setIsHidden(true);
   };
 
   return (
     <nav
       className="lg:flex py-8 gap-8 px-24 items-center hidden relative"
-      onMouseEnter={openMenu}
       onMouseLeave={closeMenu}
     >
-      <div className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center">
-        <IoMdMenu className="text-white text-3xl cursor-pointer" />
+      <div
+        className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center cursor-pointer"
+        onMouseEnter={openMenu}
+      >
+        <IoMdMenu className="text-white text-3xl " />
         <span className="uppercase text-white">Browse Categories</span>
       </div>
       <Searchbar />
