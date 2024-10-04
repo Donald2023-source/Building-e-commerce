@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignUp from "./Pages/Access/SignUp/";
+import Login from "./Pages/Access/LogIn";
 import Home from "./Pages/Home/Home";
 import Shop from "./Pages/shop/main shop/Shop";
 import Errorpage from "./components/error"; 
@@ -52,8 +53,8 @@ const App = () => {
               element: <SignUp />,
             },
             {
-              path: "signin",
-              element: <>Sign In</>,
+              path: "login",
+              element: <Login/>,
             },
           ],
         },

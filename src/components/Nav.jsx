@@ -20,9 +20,12 @@ const Nav = () => {
               />
 
               <span className="lg:flex gap-10 md:flex hidden">
+                <Link to = {"login"}> 
                 <button className="text-white rounded-lg p-2 w-20 border">
                   Login
                 </button>
+                </Link>
+               
                 <Link to={"signup"}>
                   <button className="text-white rounded-lg p-2 w-20 border">
                     Sign Up
@@ -50,7 +53,7 @@ const Nav = () => {
           </div>
           <div>
             <input
-              className="p-2 hidden mt-3 rounded-md w-[18rem] mx-auto flex border-black border-2"
+              className="p-2 hidden mt-3 rounded-md w-[18rem] mx-auto  border-black border-2"
               type="Search"
               placeholder="Search for products"
             />

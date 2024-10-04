@@ -9,7 +9,10 @@
   background-position: 50% 35%;
 }
 
-
 .border-radius {
   border-radius: 4px;
 }
+
+/* * {
+  outline: 1px solid red;
+} */
