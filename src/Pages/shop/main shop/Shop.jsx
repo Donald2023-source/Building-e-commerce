@@ -9,7 +9,7 @@ import Hero from "./Hero";
 
 const Shop = () => {
   return (
-    <section className=" bg-silver">
+    <section className=" ">
       <Hero />
       <BestSelling />
       <Flashsales />

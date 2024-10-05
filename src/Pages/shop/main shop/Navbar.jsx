@@ -39,29 +39,27 @@ const Navbar = () => {
   useEffect(() => {
     const currentPath = location.pathname;
     const found = data.find((item) => item.path === currentPath);
-    if (found) {
-      setActiveLink(found.path);
-    } else {
-      setActiveLink("");
-    }
-  }, [location]);
+    setActiveLink(found ? found.path : "");
+  }, [location.pathname]);
 
   const openMenu = () => {
-    setIsHidden(!isHidden);
+    setIsHidden(false);
   };
 
   const closeMenu = () => {
-    setIsHidden(isHidden);
+    setIsHidden(true);
   };
 
   return (
-    <nav className="lg:flex py-8 gap-8 px-24 items-center hidden relative">
-      <div className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center">
-        <IoMdMenu
-          className="text-white text-3xl cursor-pointer"
-          onMouseOver={openMenu}
-          
-        />
+    <nav
+      className="lg:flex py-8 gap-8 px-24 items-center hidden relative"
+      onMouseLeave={closeMenu}
+    >
+      <div
+        className="bg-black p-3 gap-3 rounded-[4px] pr-14 flex justify-center whitespace-nowrap items-center cursor-pointer"
+        onMouseEnter={openMenu}
+      >
+        <IoMdMenu className="text-white text-3xl " />
         <span className="uppercase text-white">Browse Categories</span>
       </div>
       <Searchbar />
@@ -77,9 +75,11 @@ const Navbar = () => {
             <NavLink
               key={i}
               to={path}
-              className={`px-1 text-nowrap hover:transform hover:scale-110 transition-transform duration-300 ${
-                path === activeLink ? "text-fadedRed" : ""
-              }`}
+              className={({ isActive }) =>
+                `px-1 text-nowrap hover:transform hover:text-fadedRed ${
+                  isActive ? "text-fadedRed" : ""
+                }`
+              }
             >
               {name}
             </NavLink>

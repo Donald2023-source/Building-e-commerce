@@ -5,7 +5,7 @@ import knots from '../../assets/nuts.png'
 import drill from '../../assets/drill-device.png'
 import bolt from '../../assets/bots.png'
 import fourStar from '../../assets/Four Star.png'
-
+import { motion } from 'framer-motion'
 
 const FeaturedProducts = () => {
     return  (
@@ -17,7 +17,11 @@ const FeaturedProducts = () => {
 
             <div className="lg:flex grid md:grid-cols-3 place-items-center grid-cols-2 gap-12">
 
-            <div className="relative py-3 w-fit">
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }} 
+            className="relative py-3 w-fit">
                       <img src={metals} alt='img' />
                       <div className="text-silver flex items-start justify-between px-2 absolute top-6 left-0 right-0">
                         <span className="bg-black text-center border-radius px-2 py-[0.3px] ">
@@ -45,7 +49,7 @@ const FeaturedProducts = () => {
                         <h4>(75)</h4>
                         </span>
                       </div>
-                    </div>
+                    </motion.div>
 
                     <div className="relative py-3 w-fit">
                       <img src={knots} alt='img'  />

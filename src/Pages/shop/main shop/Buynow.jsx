@@ -1,8 +1,6 @@
-import Card from "./Card";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import mason from "../../../assets/black-mason.png";
-import Button from "./Button";
 import pipe from "../../../assets/pipes.png";
 import "swiper/css";
 import { TbCurrencyNaira } from "react-icons/tb";
@@ -39,10 +37,10 @@ const data = [
 ];
 
 const Buynow = () => {
-  const [revPerPage, setRevPerPage] = useState(1);
+  const [revPerPage] = useState(1);
   return (
     <section className="px-2 lg:px-24 py-5 my-8">
-      <Card className={"bg-[#000000] "}>
+      <div className="bg-blacked py-6 px-4 border-radius ">
         <Swiper
           spaceBetween={20}
           slidesPerView={revPerPage}
@@ -86,9 +84,9 @@ const Buynow = () => {
                       </div>
                     </div>
                     <Link to={"#"} className="flex items-center gap-1">
-                      <Button className={"bg-white text-[#000] font-medium"}>
+                      <button className="bg-white text-blackk  py-2 text-center px-6 border-radius font-medium">
                         Buy Now!
-                      </Button>
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -99,7 +97,7 @@ const Buynow = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Card>
+      </div>
     </section>
   );
 };

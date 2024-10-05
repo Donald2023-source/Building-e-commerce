@@ -1,11 +1,11 @@
+import { Outlet } from "react-router-dom";
 import RecentlyViewed from "../main shop/Recent";
-import ConstructionChemicals from "./ConstructionChemicals";
-
+import Electronics from "../categories/Electronics";
 const Categories = () => {
   return (
     <section className="bg-silver">
-      {/* <ConstructionChemicals/> */}
-
+      <Electronics />
+      <Outlet />
       <RecentlyViewed />
     </section>
   );
